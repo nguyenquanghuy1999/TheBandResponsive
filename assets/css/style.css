@@ -185,7 +185,7 @@ html {
     position: relative;
     margin-top: 50px;
     padding-top: 50%;
-    background: url("/assets/img/slide1.jpg") no-repeat top center / cover;
+    background: url("../img/slide1.jpg") no-repeat top center / cover;
 
 }
 
