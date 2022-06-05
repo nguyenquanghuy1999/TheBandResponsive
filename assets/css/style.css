@@ -204,6 +204,7 @@ html {
 
 .slide-content-description {
     margin-top: 30px;
+    text-shadow: 0 0 1px #000;
 }
 
 /* content */
