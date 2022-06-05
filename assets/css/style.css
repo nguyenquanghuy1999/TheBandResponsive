@@ -45,7 +45,7 @@ html {
     margin: 15px 0;
     border: none;
     appearance: none;
-    /* -webkit-appearance: none; */
+    -webkit-appearance: none;
 }
 
 .btn:hover {
