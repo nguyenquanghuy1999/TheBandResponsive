@@ -1,0 +1,117 @@
+/* PC */
+@media (min-width: 1024px) {}
+
+
+/* TABLET */
+@media (min-width: 740px) and (max-width: 1023px) {}
+
+
+/* TABLET & MOBILE */
+@media (max-width: 1023px) {
+    .contact-form-input {
+        padding: 12px;
+        margin: 6px 0;
+        font-size: 16px;
+    }
+
+    .contact-info p {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    .footer-copyright {
+        font-size: 17px;
+        margin-top: 20px;
+        color: #333;
+    }
+
+    .footer-socials a {
+        font-size: 19px;
+        padding: 6px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 740px) {
+
+    .s-full-width,
+    .s-col-full {
+        width: 100% !important;
+    }
+
+    .s-text-center {
+        text-align: center;
+    }
+
+    .s-mt-16 {
+        margin-top: 16px;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-item-link {
+        text-align: left;
+        padding-left: 18px;
+    }
+
+    .nav-item:first-child .nav-item-link {
+        width: 80px;
+    }
+
+    .subnav {
+        width: 100%;
+        background: #000;
+        box-shadow: none;
+    }
+
+    .subnav-item {
+        width: 100%;
+    }
+
+    .subnav-link {
+        color: #fff;
+        padding: 14px 0 14px 20px;
+    }
+
+    .subnav-link:hover {
+        color: #333;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .member-img {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .member-name {
+        margin: 28px 0 10px;
+    }
+
+
+
+    .tour-buy {
+        padding: 0 15px;
+    }
+
+
+    .slide-content-title {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .slide-content-description {
+        margin-top: 16px;
+    }
+
+
+
+}
