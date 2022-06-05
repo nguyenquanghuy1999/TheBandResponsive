@@ -44,6 +44,8 @@ html {
     font-size: 14px;
     margin: 15px 0;
     border: none;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .btn:hover {
