@@ -1,40 +1,38 @@
 function handleBtnBuyTickets() {
-    const tourBuyBtn = document.querySelectorAll(".tour-buy-btn");
-    const modalCotainer = document.querySelector('.modal-container');
-    const modal = document.querySelector(".modal");
-    if (tourBuyBtn) {
-        tourBuyBtn.forEach(buyBtn => {
-            buyBtn.onclick = function () {
-                if (modal) {
-                    modal.classList.add("open");
-                    modalCotainer.style.animation = "modalShownTopCenter ease 0.6s ";
-                    if (modal.classList.contains("remove")) {
-                        modal.classList.remove("remove");
-                    }
-                }
-            }
-        })
+    const $ = document.querySelector.bind(document);
+    const $$ = document.querySelectorAll.bind(document);
 
-        const modalCloseBtn = document.querySelector(".modal-close");
-        if (modalCloseBtn) {
-            modalCloseBtn.onclick = function () {
-                modalCotainer.style.animation = "modalOff ease 0.8s";
-                setTimeout(() => {
-                    const inputModalTickets = document.querySelector(".form-input");
-                    inputModalTickets.value = "";
-                    if (modal.classList.contains("open")) {
-                        modal.classList.remove("open");
-                        modal.classList.add("remove");
-                    }
-                }, 300)
-            }
+
+    // click btn buy tickets modal open
+    $$(".tour-buy-btn").forEach(buyBtn => {
+        buyBtn.onclick = () => {
+            $(".modal").classList.add("open");
+            $('.modal-container').style.animation = "modalShownTopCenter ease 0.6s ";
         }
+    })
+
+    // click close off modal
+    $(".modal-close").onclick = () => {
+        $('.modal-container').style.animation = "modalOff ease 0.8s";
+        setTimeout(() => {
+            $(".form-input").value = "";
+            $(".modal").classList.remove("open");
+        }, 300)
+
     }
+
+    //  click modal off
+    $(".modal").onclick = () => {
+        $(".modal").classList.remove("open");
+    }
+
+    // ngăn cản sự kiện nổi bọt của thẻ cha (modal)
+    $('.modal-container').onclick = (e) => e.stopPropagation();
 
 
 }
-handleBtnBuyTickets();
 
+handleBtnBuyTickets();
 
 function handleClickMenuItemMoblile() {
     const header = document.querySelector("#header");

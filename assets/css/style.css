@@ -359,9 +359,6 @@ html {
     display: flex;
 }
 
-.modal.off {
-    display: none;
-}
 
 .modal-container {
     margin: auto;
