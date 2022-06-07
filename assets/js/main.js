@@ -71,6 +71,7 @@ handleClickMenuItemMoblile();
 
 
 function handleShowSlides() {
+
     let slideIndex = 1;
     showSlides(slideIndex);
 
@@ -78,21 +79,36 @@ function handleShowSlides() {
         showSlides(slideIndex += n)
     }
 
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
     function showSlides(n) {
         let slides = document.querySelectorAll(".slide-item");
+        var dots = document.getElementsByClassName("dot");
         if (n > slides.length) { slideIndex = 1 }
         if (n < 1) { slideIndex = slides.length }
         for (let i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
+        for (let i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
         slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
 
+        dots[0].onclick = () => currentSlide(1)
+        dots[1].onclick = () => currentSlide(2)
+        dots[2].onclick = () => currentSlide(3)
     }
 
     $(".slide-prev").onclick = () => plusSlides(-1);
-
     $(".slide-next").onclick = () => plusSlides(1);
+
 }
 handleShowSlides()
+
+
+
 
 

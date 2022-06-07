@@ -187,8 +187,8 @@ html {
 }
 
 .slide-item {
+  
     margin-top: 50px;
-    padding-top: 50%;
     animation: fade linear 0.4s;
 }
 
@@ -207,19 +207,8 @@ html {
     display: block;
 }
 
-.slide-one {
-    background: url("../img/slide1.jpg") no-repeat top center / cover;
-
-}
-
-.slide-two {
-    background: url("../img/slide2.jpg") no-repeat top center / cover;
-
-}
-
-.slide-three {
-    background: url("../img/slide3.jpg") no-repeat top center / cover;
-
+.slide-img {
+    width: 100%;
 }
 
 .slide-content {
@@ -276,6 +265,28 @@ html {
     font-size: 28px;
     opacity: 0.5;
     margin: auto;
+}
+.slide-dots {
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #717171;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot.active,
+.dot:hover {
+    background-color: #bbb;
 }
 
 
