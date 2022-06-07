@@ -108,8 +108,18 @@
         margin-top: 15px;
     }
 
+    .slide-prev,
+    .slide-next {
+        width: 80px;
+    }
+
     .slide-content-description {
         margin-top: 16px;
+        padding: 0 6%;
+    }
+
+    .btn-slide-icon {
+        font-size: 16px;
     }
 
 

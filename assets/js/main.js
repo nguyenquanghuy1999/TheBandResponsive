@@ -1,7 +1,7 @@
-function handleBtnBuyTickets() {
-    const $ = document.querySelector.bind(document);
-    const $$ = document.querySelectorAll.bind(document);
+const $ = document.querySelector.bind(document);
+const $$ = document.querySelectorAll.bind(document);
 
+function handleBtnBuyTickets() {
 
     // click btn buy tickets modal open
     $$(".tour-buy-btn").forEach(buyBtn => {
@@ -31,7 +31,6 @@ function handleBtnBuyTickets() {
 
 
 }
-
 handleBtnBuyTickets();
 
 function handleClickMenuItemMoblile() {
@@ -69,3 +68,31 @@ function handleClickMenuItemMoblile() {
     }
 }
 handleClickMenuItemMoblile();
+
+
+function handleShowSlides() {
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n)
+    }
+
+    function showSlides(n) {
+        let slides = document.querySelectorAll(".slide-item");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+
+    }
+
+    $(".slide-prev").onclick = () => plusSlides(-1);
+
+    $(".slide-next").onclick = () => plusSlides(1);
+}
+handleShowSlides()
+
+
