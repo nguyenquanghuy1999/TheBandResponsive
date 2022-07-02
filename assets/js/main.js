@@ -110,5 +110,18 @@ handleShowSlides()
 
 
 
+function handleScroll() {
+    const btnScrollTop = $(".btn-scroll-top");
+    window.onscroll = () => {
+        if (window.scrollY >= 800) {
+            btnScrollTop.style.display = "block"
+        } else {
+            btnScrollTop.style.display = "none"
+        }
+    }
 
+    btnScrollTop.onclick = () => window.scroll({ top: 0, behavior: "smooth" });
+
+}
+handleScroll()
 

@@ -1,0 +1,25 @@
+//---------------- UI ------------//
+1. Header (ok)
+2. Slide (thêm onclick và hiệu ứng chạy) (ok)
+3. Content
+  1. About (ok)
+  2. Tour (ok)
+  3. Contact (ok)
+  4. Image (ok)
+4. Footer (ok)
+
+- Responsive
+  + PC: (ok)
+  + TABLET: (ok)
+  + Mobile: (ok)
+
+
+//---------------UX--------------------//
+
+- Chỉnh độ cao của các nút bấm input, button trên tablet & mobile từ 42-50px để người dùng có thể bấm k bị trượt.
+ + subnav
+ + contact form
+ + button buy tickets
+ + tăng khoảng cách giữa các trang icon mạng xh (socials)
+ + copyright tăng phần đệm của link bấm vào
+ + thêm thẻ a vào phone và email đưa href vào.

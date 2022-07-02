@@ -18,10 +18,13 @@ html {
 
 ::-webkit-scrollbar {
     width: 10px;
+
+
 }
 
 ::-webkit-scrollbar-thumb {
     background: #c7c4c4;
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -187,7 +190,7 @@ html {
 }
 
 .slide-item {
-  
+
     margin-top: 50px;
     animation: fade linear 0.4s;
 }
@@ -266,6 +269,7 @@ html {
     opacity: 0.5;
     margin: auto;
 }
+
 .slide-dots {
     width: 100%;
     position: absolute;
@@ -669,4 +673,23 @@ html {
 
 .footer-copyright a:hover {
     opacity: 0.8;
+}
+
+
+.btn-scroll-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    height: 46px;
+    width: 46px;
+    border: none;
+    background: #333;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+.scroll-top-icon {
+    color: #fff;
+
 }
